@@ -1,28 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Drag n Drop</title>
-
-	<link rel="stylesheet" href="main.css" />
-</head>
-<body>
-	<div class="app">
-		<header>
-			<h1>DRAG n DROP</h1>
-		</header>
-		<div class="lists">
-			<div class="list">
-				<div class="list-item" draggable="true">List item 1</div>
-				<div class="list-item" draggable="true">List item 2</div>
-				<div class="list-item" draggable="true">List item 3</div>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="main.css">
+		<script src="main.js" defer></script>
+		<title>sortable</title>
+	</head>
+	<body>
+		<div id="parent">
+			<div id="box2" class="common" draggable="true" ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)">2</div>
+			<div id="box3" class="common" draggable="true" ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)">3</div>
+			<div id="box1" class="common" draggable="true" ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)">1</div>
+			<div id="box4" class="common" draggable="true" ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)">4</div>
+			<div id="box5" class="common" draggable="true" ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)">5</div>
+			<div id="box6" class="common" draggable="true" ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)">6</div>
+			<div id="box7" class="common" draggable="true" ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)">7</div>
+			<div id="box8" class="common" draggable="true" ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)">8</div>
+			<div id="box9" class="common" draggable="true" ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)">9</div>
 			</div>
-			<div class="list"></div>
-			<div class="list"></div>
-		</div>
-	</div>
-	<script src="main.js"></script>
-</body>
-</html>
+			<div id="time">02:00</div>
+	</body>
+	</html>
